@@ -1,8 +1,8 @@
-```javascript
+// 
 const express = require('express');
 const fs = require('fs');
 const app = express();
-const port = 3000;
+const port = 3300;
 
 // Read the file into memory
 const fileData = fs.readFileSync('LE.txt', 'utf8');
@@ -24,5 +24,3 @@ app.get('/data', (req, res) => {
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
 });
-
-```
