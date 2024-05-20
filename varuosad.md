@@ -7,6 +7,7 @@ createJsonFile.js
 
 2) Saada andmed kasutajale JSON formaadis kasutades HTTP veebiserverit
 'npm install -g json-server'
+
 Navigate to 'db. json' 
 'json-server --watch db.json'
 http:// localhost:3000/
