@@ -2,10 +2,18 @@ Harjutus 2 - auto varuosade HTTP API
 
 Seda harjutust saab jagada neljaks osaks:
 
-Loe CSV failist andmed mällu
-Saada andmed kasutajale JSON formaadis kasutades HTTP veebiserverit
-Filtreeri/otsi varuosasid seerianumbri või nime järgi
-Lehekülgedeks jagamine ja sorteerimine
+1) Loe CSV failist andmed mällu
+createJsonFile.js
+2) Saada andmed kasutajale JSON formaadis kasutades HTTP veebiserverit
+'npm install -g json-server'
+Navigate to 'db. json' 
+'json-server --watch db.json'
+http:// localhost:3000/parts
+
+3) Filtreeri/otsi varuosasid seerianumbri või nime järgi
+
+
+4) Lehekülgedeks jagamine ja sorteerimine
 Kirjeldus
 
 Ettevõte kasutab mõnda vanemat laotarkvara, mis suudab eksportida tooteid ainult CSV-vormingus. Meie eesmärk on teha oma äripartneritele API, et nad saaksid kontrollida, kas meie laos on mingeid kindlaid varuosi ja mis hinnaga. CSV eksporditakse igal hommikul värskete andmetega ja see tuleb API-sse laadida. Andmefail võib olla üle 600 Mb. Parim on see üks kord mällu lugeda ja veebiserver töös hoida. Nii ei kuluta me kasutajate päringute ajal täiendavalt protsessori aega kettalt andmete lugemiseks ja töötlemiseks.
