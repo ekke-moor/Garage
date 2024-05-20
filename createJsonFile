@@ -1,0 +1,21 @@
+const fs = require('fs');
+
+// Read the contents of the text file
+fs.readFile('data/LE.txt', 'utf8', (err, data) => {
+  if (err) {
+    console.error('Error reading file:', err);
+    return;
+  }
+
+  // Convert the data to a JavaScript object
+  const jsonData = JSON.parse(data);
+
+  // Write the object to a db.json file
+  fs.writeFile('path/to/your/db.json', JSON.stringify(jsonData, null, 2), (err) => {
+    if (err) {
+      console.error('Error writing file:', err);
+      return;
+    }
+    console.log('Data written to db.json successfully!');
+  });
+});
