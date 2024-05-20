@@ -11,6 +11,7 @@ createJsonFile.js
 Navigate to 'db. json'
 
 'json-server --watch db.json'
+
 http:// localhost:3000/
 
 
