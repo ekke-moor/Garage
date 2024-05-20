@@ -9,15 +9,15 @@ createJsonFile.js
 'npm install -g json-server'
 Navigate to 'db. json' 
 'json-server --watch db.json'
-http:// localhost:3000/sn
-http:// localhost:3000/name
+http:// localhost:3000/
 
 
 5) Filtreeri/otsi varuosasid seerianumbri või nime järgi
-
 http:// localhost:3000/?sn=00002356517
 
-6) Lehekülgedeks jagamine ja sorteerimine
+6) Lehekülgedeks ja sorteerimine
+pagination.js
+
 Kirjeldus
 
 Ettevõte kasutab mõnda vanemat laotarkvara, mis suudab eksportida tooteid ainult CSV-vormingus. Meie eesmärk on teha oma äripartneritele API, et nad saaksid kontrollida, kas meie laos on mingeid kindlaid varuosi ja mis hinnaga. CSV eksporditakse igal hommikul värskete andmetega ja see tuleb API-sse laadida. Andmefail võib olla üle 600 Mb. Parim on see üks kord mällu lugeda ja veebiserver töös hoida. Nii ei kuluta me kasutajate päringute ajal täiendavalt protsessori aega kettalt andmete lugemiseks ja töötlemiseks.
