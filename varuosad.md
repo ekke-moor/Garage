@@ -14,7 +14,8 @@ http:// localhost:3000/name
 
 
 5) Filtreeri/otsi varuosasid seerianumbri või nime järgi
-filter.js
+
+http:// localhost:3000/?sn=00002356517
 
 6) Lehekülgedeks jagamine ja sorteerimine
 Kirjeldus
